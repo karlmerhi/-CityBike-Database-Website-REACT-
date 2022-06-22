@@ -1,4 +1,4 @@
-# CityBike Database Website
+# CityBike Database Website (REACT)
 
 ### Languages and Tools Used:
 
@@ -25,6 +25,8 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### About
+
+This application is visually very similar to the [Citibike](https://github.com/karlmerhi/CityBike-Database-Website) project however the application code is completely different and now includes functionality using REACT.
 
 ![ApiExample](assets/CitibikeForm.PNG)
 
