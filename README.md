@@ -1,10 +1,20 @@
-# Getting Started with Create React App
+# CityBike Database Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Languages and Tools Used:
 
-## Available Scripts
+<img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" /> <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png" />
+<img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" />
+<img height="32" width="32" src="https://avatars.githubusercontent.com/u/5658226?s=200&v=4" />
+<img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
+<img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/mongodb.svg" />
+<img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
+<img height="32" width="52" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" />
+<img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
 
-In the project directory, you can run:
+### How to use
+
+The backend is already configured and uploaded to Heroku, the front-end therefore is already linked and has full backend functionality. To view the project you will just download the project and run the following script
 
 ### `npm start`
 
@@ -14,57 +24,56 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### About
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![ApiExample](assets/CitibikeForm.PNG)
 
-### `npm run build`
+This project was done to create a full-stack website using React, the framework ExpressJS, and Mongoose/MongoDB Atlas for database management. Below you will see the link to the back-end, it contains all of the JSON sample data on the MongoDB Atlas server and was uploaded to Heroku with the routes available for handling request and response data.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The Live Demo of the Backend: https://mighty-garden-03764.herokuapp.com/api/trips?page=1&perPage=10
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Trip queries that are available on the backend website:
+- - - -
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<pre>/api/trips/:id</pre>
+- - - -
+Returns the sample data that contains the ID specified in the API call. For example `/api/trips/572bb8222b288919b68abf69` will return JSON data:
 
-### `npm run eject`
+```
+{
+  "message": {
+    "start station location": {
+      "type": "Point",
+      "coordinates": [
+        -73.993915,
+        40.746647
+      ]
+    },
+    "end station location": {
+      "type": "Point",
+      "coordinates": [
+        -73.97809472,
+        40.736502
+      ]
+    },
+    "_id": "572bb8222b288919b68abf69",
+    "tripduration": 1245,
+    "start station id": 442,
+    "start station name": "W 27 St & 7 Ave",
+    "end station id": 545,
+    "end station name": "E 23 St & 1 Ave",
+    "bikeid": 24071,
+    "usertype": "Subscriber",
+    "birth year": 1970,
+    "start time": "2016-01-01T00:08:17.000Z",
+    "stop time": "2016-01-01T00:29:03.000Z"
+  }
+}
+```
+- - - -
+<pre>/api/trips?page=[NUMBER]&perPage=[NUMBER]</pre> 
+- - - -
+Returns a json message of the sample data by page and the amount per page. For example `/api/trips?page=1&perPage=10` will return page number 1 with 10 data points. example can be seen below:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![ApiExample](assets/CitibikeList.png)
