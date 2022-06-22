@@ -2,7 +2,7 @@
   "name": "asn2-karl_merhi",
   "version": "0.1.0",
   "engines": {
-    "node": ">=16.0.0"
+    "node": "16.0.0"
   },
   "dependencies": {
     "@react-leaflet/core": "^2.0.0",
