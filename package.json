@@ -1,7 +1,6 @@
 {
   "name": "asn2-karl_merhi",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@react-leaflet/core": "^1.1.1",
     "@testing-library/jest-dom": "^5.16.4",
